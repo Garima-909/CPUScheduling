@@ -2,6 +2,13 @@
 #define PARSER_H_INCLUDED
 
 #include <bits/stdc++.h>
+#include <sstream>
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <tuple>
+#include <vector>
+#include <utility>
 
 using namespace std;
 
@@ -11,10 +18,12 @@ using namespace std;
 
 string operation;
 int last_instant, process_count;
-vector<pair<char, int>> algorithms;
-vector<tuple<string,int,int>> processes;
-vector<vector<char>>timeline;
+vector<pair<char, int> > algorithms;
+vector<tuple<string,int,int> > processes;
+vector<vector<char> >timeline;
 unordered_map<string,int>processToIndex;
+
+
 
 
 //Results
